@@ -1,0 +1,54 @@
+{
+  "name": "fahedaljghine/laravel-model-test",
+  "description": "A package to create CRUD feature tests to eloquent models",
+  "keywords": [
+    "laravel",
+    "test",
+    "feature",
+    "automate-test"
+  ],
+  "homepage": "https://github.com/fahedaljghine/laravel-model-test",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fahed Aljghine",
+      "email": "info@fahedaljghine.com",
+      "homepage": "https://fahedaljghine.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8.71|^9.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.4",
+    "orchestra/testbench": "^6.23|^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fahedaljghine\\ModelTest\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fahedaljghine\\ModelTest\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Fahedaljghine\\ModelTest\\ModelTestServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

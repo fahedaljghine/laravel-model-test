@@ -1,0 +1,34 @@
+<?php
+
+namespace Tests\Feature;
+
+
+use App\Models\$MODEL_NAME$;
+use Database\Factories\$MODEL_NAME$Factory;
+use Fahedaljghine\ModelTest\BaseTest;
+
+
+class $MODEL_NAME$sTest extends BaseTest
+{
+    public function __construct(?string $name = null, array $data = [], $dataName = '')
+    {
+        $this->route = "$PlURAL_NAME$";
+
+        parent::__construct($name, $data, $dataName);
+    }
+
+    protected function getModelName()
+    {
+        return $MODEL_NAME$::class;
+    }
+
+    protected function getFactoryObj()
+    {
+        return $MODEL_NAME$Factory::factory();
+    }
+
+    protected function getDBCheckColumns()
+    {
+        return (new $MODEL_NAME$())->fillable;
+    }
+}
