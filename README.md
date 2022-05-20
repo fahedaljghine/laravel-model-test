@@ -9,30 +9,12 @@ by [Checking my website](https://fahedaljghine.com/).
 
 ## Installation
 
-- create `packages` Directory in the root of your app
-- unzip `laravel-model-test.zip` in the `packages` directory you just created
-- add `laravel-model-test` to your composer & add require for the package like this
+You can install the package via composer:
 
 ```bash
 
-    //other composer stuff
-    
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "packages/fahedaljghine/laravel-model-test"
-        }
-    ],
-    "require": {
-      "fahedaljghine/laravel-model-test": "dev-master",
-      //other packages
-    }
-  
-    //other composer stuff
+composer require fahedaljghine/laravel-model-test
 ```
-
-- run `composer dump`
-- run `composer update fahedaljghine/laravel-model-test`
 
 you must publish package assets with:
 
